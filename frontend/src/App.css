@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #111827;
+  color: white;
+  padding: 24px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #64748b;
+  font-size: 17px;
+}
+
+.chat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  resize: vertical;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.chat-card > button {
+  margin-top: 15px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-card > button:hover {
+  background: #1d4ed8;
+}
+
+.chat-card > button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.answer {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f0fdf4;
+  border-left: 4px solid #22c55e;
+  border-radius: 8px;
+}
+
+.answer h3 {
+  margin-top: 0;
+}
+
+.answer p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.quick-section {
+  margin-top: 35px;
+}
+
+.quick-section h3 {
+  margin-bottom: 15px;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.quick-grid button {
+  padding: 18px;
+  background: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+
+.quick-grid button:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+}

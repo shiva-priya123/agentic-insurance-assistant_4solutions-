@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+sqlalchemy
+psycopg[binary]
+langchain
+langchain-core
+langchain-ollama
+mcp
+
+langchain-huggingface
+langchain-community
+faiss-cpu
+sentence-transformers
